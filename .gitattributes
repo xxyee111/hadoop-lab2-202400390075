@@ -1,0 +1,5 @@
+* text=auto eol=lf
+data/documents/*.txt -text
+*.sh text eol=lf
+*.jar -text
+*.crc -text
