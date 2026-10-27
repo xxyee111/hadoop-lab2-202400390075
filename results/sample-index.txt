@@ -1,0 +1,8 @@
+address	<rfc1034.txt,40>;<rfc1035.txt,47>;<rfc2616.txt,16>;<rfc768.txt,6>;<rfc791.txt,102>;<rfc792.txt,26>;<rfc793.txt,24>;<rfc826.txt,93>;<rfc9110.txt,30>;<rfc959.txt,5>;<total,389>.
+checksum	<rfc768.txt,7>;<rfc791.txt,23>;<rfc792.txt,57>;<rfc793.txt,12>;<rfc9110.txt,1>;<total,100>.
+datagram	<rfc1034.txt,2>;<rfc1035.txt,5>;<rfc768.txt,10>;<rfc791.txt,175>;<rfc792.txt,55>;<rfc793.txt,19>;<total,266>.
+ftp	<rfc1034.txt,5>;<rfc1035.txt,1>;<rfc2616.txt,2>;<rfc791.txt,1>;<rfc793.txt,2>;<rfc959.txt,172>;<total,183>.
+http	<rfc2616.txt,717>;<rfc9110.txt,556>;<total,1273>.
+protocol	<rfc1034.txt,22>;<rfc1035.txt,28>;<rfc2616.txt,141>;<rfc768.txt,23>;<rfc791.txt,142>;<rfc792.txt,18>;<rfc793.txt,156>;<rfc826.txt,80>;<rfc9110.txt,212>;<rfc959.txt,131>;<total,953>.
+tcp	<rfc1034.txt,10>;<rfc1035.txt,16>;<rfc2616.txt,20>;<rfc768.txt,2>;<rfc791.txt,12>;<rfc792.txt,3>;<rfc793.txt,326>;<rfc826.txt,1>;<rfc9110.txt,19>;<rfc959.txt,8>;<total,417>.
+udp	<rfc1034.txt,4>;<rfc1035.txt,17>;<rfc768.txt,8>;<rfc791.txt,3>;<rfc792.txt,3>;<rfc9110.txt,2>;<total,37>.

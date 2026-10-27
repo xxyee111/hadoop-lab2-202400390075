@@ -1,0 +1,82 @@
+[
+  {
+    "document": "rfc768.txt",
+    "title": "User Datagram Protocol",
+    "url": "https://www.rfc-editor.org/rfc/rfc768.txt",
+    "bytes": 5896,
+    "sha256": "7dc8880e1ecef9c3f9da0db4b876a16e96bfa4f0953cc9d977d414f8f680c2f0",
+    "download_date": "2026-10-27"
+  },
+  {
+    "document": "rfc791.txt",
+    "title": "Internet Protocol",
+    "url": "https://www.rfc-editor.org/rfc/rfc791.txt",
+    "bytes": 94892,
+    "sha256": "6cfb387fcecfc1b72f2f69343c5b6951b5d263d708162e2b5c66ab8f394f6265",
+    "download_date": "2026-10-27"
+  },
+  {
+    "document": "rfc792.txt",
+    "title": "Internet Control Message Protocol",
+    "url": "https://www.rfc-editor.org/rfc/rfc792.txt",
+    "bytes": 29186,
+    "sha256": "58714393ded142bacf188d7e8977eef98f4110c4c87ac94595f750df5664c2c6",
+    "download_date": "2026-10-27"
+  },
+  {
+    "document": "rfc793.txt",
+    "title": "Transmission Control Protocol",
+    "url": "https://www.rfc-editor.org/rfc/rfc793.txt",
+    "bytes": 172710,
+    "sha256": "e55b1faa35edbeecceb2400233a16ae81897bdf9c31d5b3031e91139e5ea8142",
+    "download_date": "2026-10-27"
+  },
+  {
+    "document": "rfc826.txt",
+    "title": "Address Resolution Protocol",
+    "url": "https://www.rfc-editor.org/rfc/rfc826.txt",
+    "bytes": 21556,
+    "sha256": "01bc62fe6a37e90f1246ac43e8e145f1322b4ed1474836145c3da93d2bd3c8a6",
+    "download_date": "2026-10-27"
+  },
+  {
+    "document": "rfc959.txt",
+    "title": "File Transfer Protocol",
+    "url": "https://www.rfc-editor.org/rfc/rfc959.txt",
+    "bytes": 147316,
+    "sha256": "e2eb01566e64c12ed75a0c4bd02231e62f91eebb86f596abc40999d5e8bc5a91",
+    "download_date": "2026-10-27"
+  },
+  {
+    "document": "rfc1034.txt",
+    "title": "Domain Names Concepts and Facilities",
+    "url": "https://www.rfc-editor.org/rfc/rfc1034.txt",
+    "bytes": 126103,
+    "sha256": "d6b10a71441df879cc2817d23f2dad120c8a5f87e74eba1e4ed4b743a76a891a",
+    "download_date": "2026-10-27"
+  },
+  {
+    "document": "rfc1035.txt",
+    "title": "Domain Names Implementation and Specification",
+    "url": "https://www.rfc-editor.org/rfc/rfc1035.txt",
+    "bytes": 122549,
+    "sha256": "d14ae809fc9b41bbcae26bb38c937c9515808b944f3252b00de9fe0e95f4fdfb",
+    "download_date": "2026-10-27"
+  },
+  {
+    "document": "rfc2616.txt",
+    "title": "Hypertext Transfer Protocol HTTP 1.1",
+    "url": "https://www.rfc-editor.org/rfc/rfc2616.txt",
+    "bytes": 422279,
+    "sha256": "10211d2885196b97b1c78e1672f3f68ae97c294596ef2b7fd890cbd30a3427bf",
+    "download_date": "2026-10-27"
+  },
+  {
+    "document": "rfc9110.txt",
+    "title": "HTTP Semantics",
+    "url": "https://www.rfc-editor.org/rfc/rfc9110.txt",
+    "bytes": 502941,
+    "sha256": "21c1cdce6ab0e5509b04d84a28000836c7a087cf786efe6f04877ebfff47232a",
+    "download_date": "2026-10-27"
+  }
+]
