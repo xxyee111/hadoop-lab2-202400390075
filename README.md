@@ -53,7 +53,7 @@ python3 scripts/verify.py --output results/inverted-index.txt --summary results/
 - 最终状态：`FINISHED / SUCCEEDED`；HDFS输出存在 `_SUCCESS`。
 - Linux结果：`results/inverted-index.txt`；原始日志：`results/job.log`。
 - 独立完整校验：`results/verification.json`；全部6,267个词条、16,091项文档词频及total均一致。
-- 实际集群配置：`results/configuration/`。原始终端截图将在桌面解锁后加入。
+- 实际集群配置：`results/configuration/`。原始终端截图保存在 `results/screenshots/`。
 - HDFS输入清单和YARN原始状态也保存在 `results/`。
 
 补充验证在 Windows Hadoop 3.3.6 LocalJobRunner 上实际执行：默认配置、关闭Combiner、最大分片65,536字节加2个Reducer。所有配置均通过独立全文重算，且Linux完整索引与Windows默认完整索引逐字节一致。记录见 `results/local-job.log`、`results/local-verification.json` 和 `results/regression-tests.json`。
