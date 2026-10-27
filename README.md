@@ -46,9 +46,19 @@ python3 scripts/verify.py --output results/inverted-index.txt --summary results/
 
 ## 已执行的验证范围
 
-当前保留的完整结果来自 Windows 上 Apache Hadoop 3.3.6 的真实 LocalJobRunner，使用 10 个 Mapper 和 1 个 Reducer。`results/local-job.log` 为原始运行记录，`results/local-verification.json` 为独立校验结果。另已实际验证关闭 Combiner，以及最大输入分片 65,536 字节加 2 个 Reducer 两种配置；两者与独立统计完全一致，见 `results/regression-tests.json`。
+主要结果来自 Ubuntu 22.04.5 LTS、Zulu OpenJDK 1.8.0_512 和 Apache Hadoop 3.3.6 的真实 HDFS/YARN 单节点伪分布式集群。虚拟机配置为 1 个 CPU、2 GB 内存。已实际向 HDFS 上传全部10篇文档及停词表，提交10个Mapper、1个Reducer的任务。
 
-Linux HDFS/YARN 脚本已提供；上述本地验证不表示 Linux 伪分布式集群作业已经执行。公开仓库尚未创建，当前目录可直接作为待上传仓库。
+- YARN应用编号：`application_1793109981654_0001`。
+- MapReduce作业编号：`job_1793109981654_0001`。
+- 最终状态：`FINISHED / SUCCEEDED`；HDFS输出存在 `_SUCCESS`。
+- Linux结果：`results/inverted-index.txt`；原始日志：`results/job.log`。
+- 独立完整校验：`results/verification.json`；全部6,267个词条、16,091项文档词频及total均一致。
+- 实际集群配置：`results/configuration/`。原始终端截图将在桌面解锁后加入。
+- HDFS输入清单和YARN原始状态也保存在 `results/`。
+
+补充验证在 Windows Hadoop 3.3.6 LocalJobRunner 上实际执行：默认配置、关闭Combiner、最大分片65,536字节加2个Reducer。所有配置均通过独立全文重算，且Linux完整索引与Windows默认完整索引逐字节一致。记录见 `results/local-job.log`、`results/local-verification.json` 和 `results/regression-tests.json`。
+
+公开仓库：https://github.com/xxyee111/hadoop-lab2-202400390075
 
 ## 参考
 

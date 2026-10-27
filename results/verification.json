@@ -1,0 +1,12 @@
+{
+  "documents": 10,
+  "stopwords": 128,
+  "tokens_seen": 210374,
+  "stopwords_removed": 81555,
+  "tokens_indexed": 128819,
+  "unique_words": 6267,
+  "postings": 16091,
+  "all_postings_match": true,
+  "all_totals_match": true,
+  "stopwords_absent": true
+}

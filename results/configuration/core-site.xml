@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<configuration><property><name>fs.defaultFS</name><value>hdfs://localhost:19000</value></property><property><name>hadoop.tmp.dir</name><value>/home/xxyee/lab2-20261027/tmp</value></property></configuration>

@@ -1,0 +1,11 @@
+Found 10 items
+-rw-r--r--   1 xxyee supergroup     126103 2026-10-27 22:10 /user/xxyee/lab2-20261027-220930/input/rfc1034.txt
+-rw-r--r--   1 xxyee supergroup     122549 2026-10-27 22:10 /user/xxyee/lab2-20261027-220930/input/rfc1035.txt
+-rw-r--r--   1 xxyee supergroup     422279 2026-10-27 22:10 /user/xxyee/lab2-20261027-220930/input/rfc2616.txt
+-rw-r--r--   1 xxyee supergroup       5896 2026-10-27 22:10 /user/xxyee/lab2-20261027-220930/input/rfc768.txt
+-rw-r--r--   1 xxyee supergroup      94892 2026-10-27 22:10 /user/xxyee/lab2-20261027-220930/input/rfc791.txt
+-rw-r--r--   1 xxyee supergroup      29186 2026-10-27 22:10 /user/xxyee/lab2-20261027-220930/input/rfc792.txt
+-rw-r--r--   1 xxyee supergroup     172710 2026-10-27 22:10 /user/xxyee/lab2-20261027-220930/input/rfc793.txt
+-rw-r--r--   1 xxyee supergroup      21556 2026-10-27 22:10 /user/xxyee/lab2-20261027-220930/input/rfc826.txt
+-rw-r--r--   1 xxyee supergroup     502941 2026-10-27 22:10 /user/xxyee/lab2-20261027-220930/input/rfc9110.txt
+-rw-r--r--   1 xxyee supergroup     147316 2026-10-27 22:10 /user/xxyee/lab2-20261027-220930/input/rfc959.txt

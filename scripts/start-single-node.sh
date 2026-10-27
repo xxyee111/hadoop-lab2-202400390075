@@ -9,7 +9,7 @@ export HADOOP_LOG_DIR="$work/logs"
 export HADOOP_PID_DIR="$work/pids"
 export HADOOP_HEAPSIZE_MAX=128
 mkdir -p "$HADOOP_CONF_DIR" "$HADOOP_LOG_DIR" "$HADOOP_PID_DIR"
-cp "$HADOOP_HOME/etc/hadoop/"* "$HADOOP_CONF_DIR/"
+cp -R "$HADOOP_HOME/etc/hadoop/." "$HADOOP_CONF_DIR/"
 export LAB2_WORK="$work"
 python3 - <<'PY'
 import os, pathlib, xml.etree.ElementTree as E
@@ -31,13 +31,27 @@ export HADOOP_COMMON_HOME="$HADOOP_HOME"
 export HADOOP_HDFS_HOME="$HADOOP_HOME"
 export HADOOP_YARN_HOME="$HADOOP_HOME"
 test -f "$work/nn/current/VERSION" || hdfs namenode -format -nonInteractive
-hdfs --daemon start namenode
-hdfs --daemon start datanode
-yarn --daemon start resourcemanager
-yarn --daemon start nodemanager
+hdfs --daemon status namenode || hdfs --daemon start namenode
+hdfs --daemon status datanode || hdfs --daemon start datanode
+yarn --daemon status resourcemanager || yarn --daemon start resourcemanager
+yarn --daemon status nodemanager || yarn --daemon start nodemanager
+python3 - <<'PY'
+import socket,time
+for _ in range(300):
+    try:
+        with socket.create_connection(('localhost',19000),timeout=2):break
+    except OSError:time.sleep(2)
+else:raise RuntimeError('NameNode did not become ready')
+PY
 hdfs dfsadmin -safemode wait
-for i in $(seq 1 30);do
-  yarn node -list 2>/dev/null | grep -q RUNNING && break
-  sleep 2
-done
+python3 - <<'PY'
+import urllib.request,json,time
+for _ in range(300):
+    try:
+        nodes=json.load(urllib.request.urlopen('http://localhost:18088/ws/v1/cluster/nodes',timeout=3))
+        if any(n['state']=='RUNNING' for n in nodes.get('nodes',{}).get('node',[])):break
+    except Exception:pass
+    time.sleep(2)
+else:raise RuntimeError('YARN node did not become ready')
+PY
 jps

@@ -1,0 +1,3 @@
+Total number of applications (application-types: [], states: [FINISHED] and tags: []):1
+                Application-Id	    Application-Name	    Application-Type	      User	     Queue	             State	       Final-State	       Progress	                       Tracking-URL
+application_1793109981654_0001	lab2-document-inverted-index	           MAPREDUCE	     xxyee	   default	          FINISHED	         SUCCEEDED	           100%	http://xxyee-VirtualBox:19888/jobhistory/job/job_1793109981654_0001
